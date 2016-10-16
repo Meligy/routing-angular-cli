@@ -2,11 +2,13 @@ import {HomepageModule} from './homepage/homepage.module';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-const routes: Routes = [
+export function loadHomepage() { return HomepageModule; }
+
+export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: function() { return HomepageModule; }
+    loadChildren: loadHomepage
   },
   {
     path: 'about',
