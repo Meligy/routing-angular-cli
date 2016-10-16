@@ -4,6 +4,8 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
+    "ng": "ng",
+    "reset": "ng init --routing --style=scss",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
