@@ -1,18 +1,24 @@
-import {HomepageModule} from './homepage/homepage.module';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-export function loadHomepage() { return HomepageModule; }
+import {SimpleRouteComponent} from './simple-route/simple-route.component';
+import {BundledModule} from './bundled/bundled.module';
+
+export function loadBundledModule() { return BundledModule; }
 
 export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: loadHomepage
+    component: SimpleRouteComponent
   },
   {
-    path: 'about',
-    loadChildren: './about/about.module#AboutModule'
+    path: 'bundled',
+    loadChildren: loadBundledModule
+  },
+  {
+    path: 'lazy',
+    loadChildren: './lazy/lazy.module#LazyModule'
   }
 ];
 

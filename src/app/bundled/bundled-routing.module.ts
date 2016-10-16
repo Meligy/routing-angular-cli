@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about.component';
+//import { BundledChildComponent } from './bundled-child/bundled-child.component';
+import { BundledComponent } from './bundled.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: AboutComponent
+    component: BundledComponent
   }
 ];
 
@@ -14,4 +15,4 @@ export const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class AboutRoutingModule { }
+export class BundledRoutingModule { }
