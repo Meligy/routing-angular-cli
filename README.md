@@ -1,8 +1,8 @@
-# RoutingAngularCli
+# Angular CLI Routing Example
 
 The purpose of this project is to show examples of loading routes by including them directly in the bundle, and by loading them lazily as separate bundles.
 
-The project shows a simple website, showing a `Homepage` route loaded in the main bundle, and an `About` route loaded lazily.
+The project shows a simple website, showing a `bundled` route loaded in the main bundle, and a `lazy` route loaded in a seperate bundle (lazy loaded).
 
 ## Standard Angular CLI Docs
 
