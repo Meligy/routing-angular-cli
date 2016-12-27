@@ -6,7 +6,7 @@ The project shows a simple website, showing a `bundled` route loaded in the main
 
 ## Standard Angular CLI Docs
 
-The project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+The project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
 The commands below have been modified to ensure you are using the locally installed `angular-cli` package.
 
