@@ -5,6 +5,7 @@ import { LazyComponent } from './lazy.component';
 export const routes: Routes = [
   {
     path: '',
+    pathMatch: 'full',
     component: LazyComponent
   },
   {

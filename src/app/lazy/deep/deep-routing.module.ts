@@ -5,7 +5,13 @@ import { DeepComponent } from './deep.component';
 export const routes: Routes = [
   {
     path: '',
+    pathMatch: 'full',
     component: DeepComponent
+  },
+  {
+    path: 'third',
+    // loadChildren: 'app/lazy/deep/third-level/third-level.module#ThirdLevelModule'
+    loadChildren: './third-level/third-level.module#ThirdLevelModule'
   }
 ];
 
