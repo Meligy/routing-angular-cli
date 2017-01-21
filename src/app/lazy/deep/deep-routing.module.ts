@@ -10,7 +10,6 @@ export const routes: Routes = [
   },
   {
     path: 'third',
-    // loadChildren: 'app/lazy/deep/third-level/third-level.module#ThirdLevelModule'
     loadChildren: './third-level/third-level.module#ThirdLevelModule'
   }
 ];
