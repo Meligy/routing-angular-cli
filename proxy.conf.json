@@ -1,0 +1,8 @@
+{
+  "/monitoring/ui/**": {
+    "target": "http://localhost:4200/",
+    "pathRewrite": {
+      "^/monitoring/ui": ""
+    }
+  }
+}
