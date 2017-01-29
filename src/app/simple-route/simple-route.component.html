@@ -1,3 +1,24 @@
 <p>
   simple-route works!
 </p>
+
+<form [formGroup]="formGroup" (ngSubmit)="onLogin(formGroup.value)">
+  <div>
+    <label>
+      Username
+      <input formControlName="username">
+    </label>
+  </div>
+  <div>
+    <label>
+      Username
+      <input formControlName="password" type="password">
+    </label>
+  </div>
+  <div>
+    <button type="submit">Login</button>
+  </div>
+</form>
+<div *ngIf="loggedInName">
+  You are now logged in as {{loggedInName}}
+</div>
